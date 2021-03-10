@@ -67,12 +67,12 @@
                 <div class="row">
                     <div class="col-12 col-md-8">
                         <div class="receipe-headline my-5">
-                            <span>30 de Fevereiro, 2000</span>
-                            <h2>Nome da receita</h2>
+                            <span>{{ receita.criado_em }}</span>
+                            <h2>{{receita.nome_das_receitas}}</h2>
                             <div class="receipe-duration">
-                                <h6>Preparo: 15 minutos</h6>
-                                <h6>Rendimento: 2 porçoes</h6>
-                                <h6>Categoria: categoria</h6>
+                                <h6>Tempo de preparo {{ receita.tempo_de_preparo }}</h6>
+                                <h6>Rendimento: {{ receita.rendimento }}</h6>
+                                <h6>Categoria: {{ receita.categoria }}</h6>
                                 <h6>Por: Pessoa</h6>
                             </div>
                         </div>
